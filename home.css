@@ -1,0 +1,175 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #003399; /* Azul Caixa */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Permite centralizar o conteúdo verticalmente */
+    align-items: center;
+    min-height: 100vh; /* Ajusta a altura mínima para ocupar toda a tela */
+    overflow-x: hidden;
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+
+/* Cabeçalho fixo */
+header {
+    background-color: #0044cc; /* Azul mais escuro */
+    color: #ffcc00; /* Amarelo Caixa */
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    position: fixed; /* Fixado no topo da página */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px; /* Espaço para o cabeçalho fixo */
+    box-sizing: border-box;
+    margin-top: 20px; /* Adiciona espaço acima do conteúdo */
+}
+
+/* Container principal */
+.home-container {
+    background-color: #0044cc; /* Azul mais escuro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Oculta rolagem no container principal */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #ffcc00; /* Amarelo Caixa */
+    margin: 20px 0; /* Ajusta a margem superior e inferior */
+}
+
+/* Formulário de transações */
+#transactionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px; /* Adiciona um espaço entre o título e o formulário */
+}
+
+#transactionForm input, #transactionForm select, #transactionForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#transactionForm input, #transactionForm select {
+    background-color: #0055cc;
+    color: #ffffff;
+}
+
+#transactionForm button {
+    background-color: #ffcc00;
+    color: #003399;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#transactionForm button:hover {
+    background-color: #e6b800;
+}
+
+/* Botões adicionais */
+#clearAllBtn, #logoutBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #003399;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#clearAllBtn:hover, #logoutBtn:hover {
+    background-color: #e6b800;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #0055cc;
+}
+
+td {
+    background-color: #0044cc;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4444;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Gráfico */
+canvas {
+    background-color: #003399;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .home-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #transactionForm input, #transactionForm select, #transactionForm button {
+        padding: 8px;
+    }
+
+    #clearAllBtn, #logoutBtn {
+        padding: 8px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

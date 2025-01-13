@@ -1,0 +1,41 @@
+body {
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p3/6852817-linhas-degrade-coloridas-abstratas-com-luz-azul-e-rosa-em-fundo-roxo-gratis-vetor.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: rgba(136, 118, 118, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 35px;
+    border: 2px solid #a51f1f;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8a05be;
+    color: rgb(233, 233, 233);
+    font-size: 16px;
+}
